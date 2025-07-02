@@ -6,6 +6,12 @@
       <grid>true</grid>
     </scene>
 
+    <!-- Gazebo plugin to publish model states for vision controller -->
+    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so">
+      <update_rate>10.0</update_rate>
+      <publish_model_states>true</publish_model_states>
+    </plugin>
+
     <!-- Light and ground -->
     <include><uri>model://sun</uri></include>
     <include><uri>model://ground_plane</uri></include>
@@ -151,6 +157,43 @@
       <uri>model://shelf</uri>
       <pose>-3 -1 0.05 0 0 1.57</pose>
       <scale>3.5 1 1</scale>
+    </include>
+
+    <!-- Person models with AprilTags -->
+    <include>
+      <name>staff_leonardo</name>
+      <uri>model://staff_leonardo</uri>
+      <pose>2.5 0.0 0.0 0 0 -1.540470</pose>
+    </include>
+
+    <include>
+      <name>staff_lorenzo</name>
+      <uri>model://staff_lorenzo</uri>
+      <pose>6.722341 -3.300510 0.0 -0.000001 0.000001 -1.540470</pose>
+    </include>
+
+    <include>
+      <name>staff_federico</name>
+      <uri>model://staff_federico</uri>
+      <pose>-1.933579 -1.933579 0.0 0 0 3.106171</pose>
+    </include>
+
+    <include>
+      <name>customer_emanuele</name>
+      <uri>model://customer_emanuele</uri>
+      <pose>-6.260819 -3.410051 0.0 0 0 1.889247</pose>
+    </include>
+
+    <include>
+      <name>customer_antonello</name>
+      <uri>model://customer_antonello</uri>
+      <pose>-2.276254 1.639937 0.0 0 0 1.605309</pose>
+    </include>
+
+    <include>
+      <name>customer_niccolo</name>
+      <uri>model://customer_niccolo</uri>
+      <pose>3.698934 2.278484 0.0 0 0 -1.574704</pose>
     </include>
 
   </world>
