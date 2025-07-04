@@ -196,5 +196,58 @@
       <pose>3.698934 2.278484 0.0 0 0 -1.574704</pose>
     </include>
 
+    <!-- Sport objects on red boxes with AprilTags -->
+    <!-- Baseball sport (2 objects) -->
+    <include>
+      <name>red_box_baseball_bat</name>
+      <uri>model://red_box_baseball_bat</uri>
+      <pose>7.228297 -0.022547 0.896645 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>red_box_baseball</name>
+      <uri>model://red_box_baseball</uri>
+      <pose>7.431411 2.900497 1.068998 3.141593 -1.565479 3.141593</pose>
+    </include>
+
+    <!-- Soccer sport (2 different objects) -->
+    <include>
+      <name>red_box_soccer_ball</name>
+      <uri>model://red_box_soccer_ball</uri>
+      <pose>-3.002954 -1.049619 0.895531 0 0.005474 0</pose>
+    </include>
+    
+    <include>
+      <name>red_box_soccer_cleats</name>
+      <uri>model://red_box_soccer_cleats</uri>
+      <pose>-2.974834 1.119477 0.901128 0 -0.005298 0</pose>
+    </include>
+
+    <!-- Basketball sport (2 different objects) -->
+    <include>
+      <name>red_box_basketball</name>
+      <uri>model://red_box_basketball</uri>
+      <pose>3.168715 0.987624 1.070007 0 -1.565613 0</pose>
+    </include>
+    
+    <include>
+      <name>red_box_basketball_hoop</name>
+      <uri>model://red_box_basketball_hoop</uri>
+      <pose>3.141593 -1.193743 1.073936 3.141593 -1.554784 3.141593</pose>
+    </include>
+
+    <!-- Tennis sport (2 different objects) -->
+    <include>
+      <name>red_box_tennis_racket</name>
+      <uri>model://red_box_tennis_racket</uri>
+      <pose>-7.366979 -2.490737 1.079890 3.141593 1.568105 3.141593</pose>
+    </include>
+    
+    <include>
+      <name>red_box_tennis_ball</name>
+      <uri>model://red_box_tennis_ball</uri>
+      <pose>-7.374394 -0.133096 1.068885 3.141593 1.561069 3.141593</pose>
+    </include>
+
   </world>
 </sdf>
